@@ -1017,6 +1017,8 @@ obj-m += xyzac-trt-kins.o
 xyzac-trt-kins-objs := emc/kinematics/xyzac-trt-kins.o
 obj-m += xyzbc-trt-kins.o
 xyzbc-trt-kins-objs := emc/kinematics/xyzbc-trt-kins.o
+obj-m += xyzabc-trt-printer-kins.o
+xyzabc-trt-printer-kins-objs := emc/kinematics/xyzabc-trt-printer-kins.o
 obj-m += rosekins.o
 rosekins-objs := emc/kinematics/rosekins.o
 
@@ -1142,6 +1144,7 @@ endif
 ../rtlib/rotarydeltakins$(MODULE_EXT): $(addprefix objects/rt,$(rotarydeltakins-objs))
 ../rtlib/xyzac-trt-kins$(MODULE_EXT): $(addprefix objects/rt,$(xyzac-trt-kins-objs))
 ../rtlib/xyzbc-trt-kins$(MODULE_EXT): $(addprefix objects/rt,$(xyzbc-trt-kins-objs))
+../rtlib/xyzabc-trt-printer-kins$(MODULE_EXT): $(addprefix objects/rt,$(xyzabc-trt-printer-kins-objs))
 ../rtlib/rosekins$(MODULE_EXT): $(addprefix objects/rt,$(rosekins-objs))
 ../rtlib/scorbot-kins$(MODULE_EXT): $(addprefix objects/rt,$(scorbot-kins-objs))
 ../rtlib/hal_gm$(MODULE_EXT): $(addprefix objects/rt,$(hal_gm-objs))

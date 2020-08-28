@@ -54,6 +54,7 @@ set ::HR(comps,motion)       [list motion axis joint spindle]
 set ::HR(comps,kinematics)   [list tripodkins scarakins rotatekins maxkins \
                                    genserkins genhexkins \
                                    xyzbc-trt-kins xyzac-trt-kins \
+                                   xyzabc-trt-printer-kins \
                                    rosekins 5axiskins pumakins \
                                    rotarydeltakins lineardeltakins \
                              ]
